@@ -1,0 +1,44 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Demo of DOM</title>
+	</head>
+	<body>
+		<h1>Demo of DOM (Document Object Model)</h1>
+
+		<input type="text" id="txtName" name="txtName"  onChange="fCheckIfEmpty('txtName')"/>
+		<input type="text" id="txtAge" name="txtAge"    onChange="fCheckIfEmpty2(this)" />
+
+		<script type="text/javascript">
+
+			function fCheckIfEmpty(txt) {
+				if( document.getElementById(txt).value == ''){
+					alert('cannot be empty');
+				}
+			}
+
+			function fCheckIfEmpty2(txt) {
+				if (txt.value = '') {
+					alert('cannot be empty');
+				}
+			}
+
+
+			function Employee(id, name) {
+				this.ID = id;
+				this.Name = name;
+
+				this.Work = function() {
+					alert('Employee ' + this.Name + ' is working today');
+				};
+			}
+
+			var obj = new Employee(10, 'First employee');
+
+			alert( 'Employee ID: ' + obj.ID + ', Name = ' + obj.Name );
+			obj.Work();
+
+		</script>
+
+	</body>
+</html>

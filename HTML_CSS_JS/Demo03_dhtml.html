@@ -1,0 +1,25 @@
+<!doctype HTML>
+<html>
+	<head>
+
+		<style>
+		</style>
+
+	</head>
+	<body>
+
+		<h1>Dynamic HTML</p>
+
+		<p id="p1">1</p>
+
+		<input type="button" value="click me" onclick="clickMe()" >
+
+		<script type="text/javascript">
+			function clickMe() {
+				let i = document.getElementById('p1').innerText;
+
+				window.document.getElementById('p1').innerHTML = parseInt(i) + 1;
+			}
+		</script>
+	</body>
+</html>
