@@ -1,0 +1,191 @@
+Pre-Processor (replace constant, perform syntax check)
+Parser        (replace constant, perform syntax check, builds DOM)
+	Interpreter (reads, converts, executes, reads next - line by line)
+	Compiler    (read, convert, save - file by file)
+
+
+
+Namespace
+
+Declaration
+Instantiation
+Initialization
+Finalization
+
+
+Comment
+	inline
+	block
+	xml comments
+
+Naming Conventions
+										Hungarian Principle
+	FIRSTNAME	Capital Casing		Constant	NAME		NAMEstring	stringNAME
+	FirstName	Pascal Casing		Public		Name		NameString	StringName
+	firstname	Small Casing		Local		name		namestring	stringname
+	_firstName	Camel Casing 		Private		_name		_nameString	_stringName
+	firstName	Camel Casing 		Protected	name		nameString	stringName
+
+
+
+GoF: Gang Of Four DESIGN PATTERNS (23 Patterns)
+- Creational Patterns
+- Structural Patterns
+- Behavioural Patterns
+
+
+.NET Framework
+	CLR
+	Class Libraries
+
+CTS - Common Type System
+CLS - Common Language Specification
+
+CLR - Common Language Runtime
+
+-----------------------------------------------------------------------------------------------
+
+COMMON TYPE SYSTEM
+ - Value Types		- struct, enum
+ - Reference Types
+
+CTS (Common Type System)
+				 			object
+					  		  |
+				------------------------------------------------------
+				Value Type				Reference Type
+				- Structure (struct)			- Class
+				- Enumeration (enum)			- Delegate
+												- Generic
+
+-----------------------------------------------------------------------------------------------------------------
+
+PROGRAMMING STYLES
+I generation	Statement Driven 	Semantic Programming (Eg: HTML)
+II generation   Procedural Driven 	Semantic Programming (Eg: C, CSS, JavaScript)
+III generation	OOP 				Semantic Programming (Eg: C++, Java, PHP)
+IV generation   Event Driven		Semantic Programming (Eg: C++, Java, PHP, PY)
+
+OOPs  (Object Oriented Programming Concepts)
+
+Declaration
+Instantiation
+	- Constructor
+Initialization
+Finalization
+
+Steps of Encapsulated Logic
+		- 1. Authentication
+		- 2. Authorization
+		- 3. Validation
+		- 4. Activity/Action
+		- 5. Audit Logging
+
+Encapsulation
+	- Attributes (member of the type / instance)
+		- Data Fields
+		- Properties
+		- Indexer
+	- Behaviours (member of the type / instance)
+		- Methods
+		- Constructors
+Inheritance (base/derived)
+Abstraction
+Polymorphism
+	- Overload (compile-time syntax check and resolution)			     -- I Preference
+	- Override (compile-time syntax check, and runtime-time resolution)	-- III Preference
+			virtual  / override
+			override / override
+			abstract / override
+			sealed
+	- Overshadow														-- IV Preference
+			new
+	- Interface														    -- II Preference
+Aggregation (object within another object)
+Events
+
+
+Design Pattern
+- Factory Method Pattern
+- Singleton (static)
+- Factory Pattern
+- Observer Pattern 		(Event)
+
+
+
+OOPs-Programming Tools
+
+	Namespace
+	Type - 
+	-- Value Type: 		Structure, Enumeration
+	-- Reference Types: Class, Delegate
+	Object
+		- Data Field
+		- Property
+		- Method
+		- Constructor
+		- Indexer
+	Types of Methods:
+		Standard Methods
+		Constructor
+		Destructor
+	Delegate
+	Inheritance Modifiers
+		virtual
+		override
+		abstract
+		sealed
+		new
+	Inheritance Accessors
+		base
+		this
+
+
+TPL: Task Parallel Library
+		
+BOOKS:
+	Head First C#
+	Step by Step Guide to ADO.NET
+
+
+User
+	Application		
+		Process		
+			Task			
+				Thread
+
+
+
+	
+---------------------------------------------
+
+int[] arr = { 1, 15, 21, 81, 16, 32, 84, 97, 16, 25 };		// Array of Rank 1
+
+for( int i = 0; i < arr.Length; i++ )						.Length { 1, 2, 3, 4, 5 }
+{
+	Console.WriteLine( "{0} ", arr[i] );
+}
+
+int length = arr.GetLength(0);
+for( int i = 0; i < length; i++ )
+{
+	Console.WriteLine( "{0} ", arr[i] );
+}
+
+
+obj.p							p { get { ..... }  ==> 150
+obj.m();						m() { ..... }	   ==> 150
+
+
+
+
+
+
+
+
+
+Customers		Categories		MenuItems		Orders		OrderDetails
+-CustomerId (PK)	-CategoryId (PK)	-MenuItemId (PK)	OrderId (PK)	OrderDetailId (PK)
+						-CategoryId (FK)	CustomerID(FK)	OrderId (FK)
+											MenuItem (FK)
+											Quantity
