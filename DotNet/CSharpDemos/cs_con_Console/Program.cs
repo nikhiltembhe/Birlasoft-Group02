@@ -1,5 +1,10 @@
 ﻿using System;
 
+// NOTE: 
+//  The .csproj file (Project Template file), has the following two lines added by me:
+//      <LangVersion>10.0</LangVersion>
+//      <Nullable>enable</Nullable>
+
 namespace cs_con_Console
 {
     internal class Program
@@ -74,6 +79,27 @@ namespace cs_con_Console
             Console.WriteLine($"a = {a}, b = {b}");
             Console.WriteLine($"a = {a + 50}, b = {b.ToUpper()}");
             Console.WriteLine("a = {0}, b = {1}", a + 50, b.ToUpper()); // string.Format() implicitly
+
+            Console.WriteLine();
+
+            Console.Write("Enter a number:");
+            string? inputNumber = Console.ReadLine();           // Nullable
+            if(! string.IsNullOrEmpty(inputNumber))         // inputNumber == NULL  || inputNumber == ""
+            {
+                int number = int.Parse(inputNumber);
+                Console.WriteLine($"you entered : {number}");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+
+            int? i = null;              // NULLABLE INT32 try with NULL or 50
+            if(i.HasValue)
+            {
+                int j = i.Value;                // extract the value from the Nullable Int32
+                Console.WriteLine("j = {0}", j);
+            }
         }
     }
 }
