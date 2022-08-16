@@ -18,11 +18,11 @@ namespace cs_con_ArrayList
 
             Console.WriteLine(intList[3]);      // "hello world"
 
-            Console.WriteLine("Length of ArrayList: {0}", intList.Count);       // 5
+            Console.WriteLine("Length of ArrayList: {0}", intList.Count);       // 6
 
             intList.Add(new int[] { 100, 200, 300 });       // intList[5] = { 100, 200, 300 }
 
-            int[] arr = intList[5] as int[];            // unbox the sixth element in the ArrayList
+            int[] arr = intList[5] as int[];
             int secondItem = arr[1];
             Console.WriteLine(secondItem);
             Console.WriteLine((intList[5] as int[])[1]);
@@ -30,7 +30,7 @@ namespace cs_con_ArrayList
             Console.WriteLine("Length of the array: {0}", arr.Length);
             Console.WriteLine("Length of ArrayList after adding the array using Add: {0}", intList.Count);       // 6
 
-            intList.RemoveAt(1);            // removes the item in second position      
+            intList.RemoveAt(1);            // removes the item in second position      // Length: 5
 
             intList.AddRange(new int[] { 1000, 2000, 3000 });   // intList[5] = 10000, intList[6] = 2000, ...
 

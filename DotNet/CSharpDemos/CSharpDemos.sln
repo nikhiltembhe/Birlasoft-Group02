@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs_con_BoxingUnboxing", "cs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs_con_ArrayList", "cs_con_ArrayList\cs_con_ArrayList.csproj", "{61A2DBBC-7FE3-47EF-BFD3-FDA8AB7FE76E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs_con_ValueTypes", "cs_con_ValueTypes\cs_con_ValueTypes.csproj", "{028902E3-BBA5-4E5C-9F55-C0E873519274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cs_con_ReferenceTypes", "cs_con_ReferenceTypes\cs_con_ReferenceTypes.csproj", "{2A086892-2D34-4182-8D6D-613F2E71E8B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +60,14 @@ Global
 		{61A2DBBC-7FE3-47EF-BFD3-FDA8AB7FE76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61A2DBBC-7FE3-47EF-BFD3-FDA8AB7FE76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61A2DBBC-7FE3-47EF-BFD3-FDA8AB7FE76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028902E3-BBA5-4E5C-9F55-C0E873519274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028902E3-BBA5-4E5C-9F55-C0E873519274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028902E3-BBA5-4E5C-9F55-C0E873519274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028902E3-BBA5-4E5C-9F55-C0E873519274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A086892-2D34-4182-8D6D-613F2E71E8B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A086892-2D34-4182-8D6D-613F2E71E8B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A086892-2D34-4182-8D6D-613F2E71E8B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A086892-2D34-4182-8D6D-613F2E71E8B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
