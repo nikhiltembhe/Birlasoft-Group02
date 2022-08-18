@@ -2,29 +2,7 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Guni04/v17
-/.vs/Guni04/FileContentIndex
 /.vs
-/DotNet/CSharpDemos/.vs/CSharpDemos/DesignTimeBuild
-/DotNet/CSharpDemos/.vs/CSharpDemos/FileContentIndex
-/DotNet/CSharpDemos/.vs
-/DotNet/CSharpDemos/cs_con_Console/bin/Debug/netcoreapp3.1
-/DotNet/CSharpDemos/cs_con_Console/obj
-/DotNet/CSharpDemos/cs_con_HelloWorld/obj
-/DotNet/CSharpDemos/cs_con_HelloWorld/bin/Debug/netcoreapp3.1
-/DotNet/CSharpDemos/cs_con_DataTypes/obj
-/DotNet/CSharpDemos/cs_con_MethodParameters/bin/Debug/net6.0
-/DotNet/CSharpDemos/cs_con_MethodParameters/obj
-/DotNet/CSharpDemos/cs_con_ArrayList/bin/Debug
-/DotNet/CSharpDemos/cs_con_ArrayList/obj
-/DotNet/CSharpDemos/cs_con_Arrays/bin/Debug/net6.0
-/DotNet/CSharpDemos/cs_con_Arrays/obj
-/DotNet/CSharpDemos/cs_con_BoxingUnboxing/bin/Debug
-/DotNet/CSharpDemos/cs_con_BoxingUnboxing/obj
-/DotNet/CSharpDemos/cs_con_ReferenceTypes/bin/Debug
-/DotNet/CSharpDemos/cs_con_ReferenceTypes/obj
-/DotNet/CSharpDemos/cs_con_ValueTypes/bin/Debug
-/DotNet/CSharpDemos/cs_con_ValueTypes/obj
 
 # User-specific files
 *.rsuser
