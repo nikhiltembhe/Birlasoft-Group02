@@ -17,7 +17,6 @@ Sequence of the projects for learning purposes:
 15 cs_con_Assignment02
 16 cs_con_Interfaces
 17 cs_con_InterfacesExtended
-
 18 cs_con_IComparable
 19 cs_con_IEnumerator
 20 cs_con_IEnumerable

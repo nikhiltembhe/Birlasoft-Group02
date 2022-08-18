@@ -13,22 +13,30 @@ namespace cs_con_IComparable
         public string Designation { get; set; }
 
 
-        #region System.IComparable interface members
+
+        #region System.IComparable members
 
         /// <summary>
-        ///     This method is used during comparision and during sorting activities
+        ///     Called during any Comparison or Sorting operations of the Employee Object
         /// </summary>
-        /// <param name="obj"></param>
+        /// <param name="obj">Object to compare against with the current object </param>
         /// <returns>
-        ///     0           if current object is equal to the other object
-        ///     -negative   if current object (LHS) is lesser than the other object (RHS)
-        ///     +positive   if current object (LHS) is greater than the other object (RHS)
+        ///     0           this    equal to      otherEmployee
+        ///     -negative   this    lesser than   otherEmployee
+        ///     +positive   this    greater than  otherEmployee OR otherEmployee == NULL
         /// </returns>
-        public int CompareTo(object obj)
+        public int CompareTo(object? obj)
         {
-            Employee otherEmployee = obj as Employee;       // unboxing
-            return this.EmployeeID.CompareTo(otherEmployee.EmployeeID);         // ASC on EmployeeID
-            // return otherEmployee.EmployeeID.CompareTo(this.EmployeeID);      // DESC on EmployeeID
+            if (obj == null)
+            {
+                return 1;
+            }
+            else
+            {
+                Employee empOther = obj as Employee;
+                return this.EmployeeID.CompareTo(empOther.EmployeeID);      // ASC order of EmployeeID
+                // return empOther.EmployeeID.CompareTo(this.EmployeeID);   // DESC order of EmployeeID
+            }
         }
 
         #endregion

@@ -45,14 +45,14 @@ namespace cs_con_IComparable
             }
             Console.WriteLine();
 
-            Array.Sort(employees);
+            Array.Sort(employees);          // interally calling CompareTo() method for each of the objects in the array
 
+            Console.WriteLine("--- after sorting");
             foreach (Employee emp in employees)
             {
                 Console.WriteLine($"{emp.EmployeeID} {emp.EmployeeName}\t{emp.Designation}");
             }
             Console.WriteLine();
-
         }
     }
 }

@@ -16,10 +16,16 @@ namespace cs_con_IEnumerable
 
         public System.Collections.IEnumerator GetEnumerator()
         {
-            foreach(Employee emp in this._employees)
+            for(int i = 0; i < _employees.Count; i++)
             {
-                yield return emp;
+                yield return _employees[i];
             }
+
+            // --- SAME AS ABOVE
+            //foreach(Employee emp in this._employees)
+            //{
+            //    yield return emp;
+            //}
         }
 
         #endregion

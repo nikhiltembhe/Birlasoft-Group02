@@ -14,7 +14,6 @@ namespace cs_con_IEnumerator
 
         #region System.Collections.IEnumerator members
 
-
         private int _currentPosition;
 
         public object Current
@@ -68,6 +67,7 @@ namespace cs_con_IEnumerator
             }
         }
 
+
         public Employee this[int findID]
         {
             get
@@ -82,6 +82,7 @@ namespace cs_con_IEnumerator
                         break;          // no need to continue searching for the employee
                     }
                 }
+
                 return empFound;
             }
         }

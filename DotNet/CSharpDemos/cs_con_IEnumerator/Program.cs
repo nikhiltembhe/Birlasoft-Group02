@@ -38,7 +38,7 @@ namespace cs_con_IEnumerator
 
 
             Employee empThird = objCompany[3];          // idToFind == 3
-            if(empThird != null)
+            if (empThird != null)
             {
                 Console.WriteLine($"ID and Name of the searched employee: {empThird.EmployeeID} {empThird.EmployeeName}");
             }
@@ -48,8 +48,9 @@ namespace cs_con_IEnumerator
             }
             Console.WriteLine();
 
+
             System.Collections.ArrayList empFound = objCompany["Mumbai"];
-            if (empFound != null)
+            if (empFound != null || empFound.Count != 0)
             {
                 Console.WriteLine("Employees of the Branch: MUMBAI");
                 foreach (Employee emp in empFound)
